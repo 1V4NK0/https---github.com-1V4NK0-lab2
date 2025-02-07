@@ -28,6 +28,7 @@ class TaskManager implements TaskInterface {
                 return this.tasks.length;
             }     
         }
+        //return -1 if no task found
         return -1;
     }
     listAllTasks(){
@@ -37,6 +38,7 @@ class TaskManager implements TaskInterface {
     }
 }
 
+//creating an instance of task manager class and testing
 let tasksmanager = new TaskManager();
 tasksmanager.addTask("play games");
 tasksmanager.addTask("running")
