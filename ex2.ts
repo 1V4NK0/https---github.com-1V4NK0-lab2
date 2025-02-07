@@ -11,6 +11,7 @@ interface TaskInterface{
 class TaskManager implements TaskInterface {
     tasks: string[];
 
+    //initialize array
     constructor() {
         this.tasks = []
     }
