@@ -4,7 +4,7 @@ let array: string[] = [];
 //arrow func to add a task to an arr, returns num of tasks in arr
 const addTask = (task:string):number => {
     array.push(task);
-    console.log("the task has been added")
+    console.log(task+" has been added")
     return array.length;
 }
 
@@ -20,7 +20,7 @@ const deleteTask = (taskToDelete:string):number => {
     for (let i = 0; i< array.length; i++) {
         if (array[i] == taskToDelete) {
             array.splice(i,1);
-            console.log("task has been deleted")
+            console.log(taskToDelete+" has been deleted")
             return array.length;
         } else {
             console.log("no such task in array")
